@@ -6,7 +6,7 @@
   - Usar a landing de implantes como referência principal de composição e a página institucional como fonte de conteúdo.
 
 - [x] **Páginas próprias para campanhas do Google**
-  - `/implantes-proteses-cirurgias` para implantes, próteses, cirurgias, enxerto ósseo e reabilitação oral.
+  - `/implantes-proteses` para implantes, próteses, cirurgias, enxerto ósseo e reabilitação oral.
   - `/clinica-geral` para avaliação, prevenção, limpeza, restaurações, diagnóstico e encaminhamento.
   - `/urgencia-odontologica` para dor, trauma, dente quebrado, sangramento e outras intercorrências.
   - `/cirurgias` para cirurgia bucomaxilofacial, implantodontia, enxerto ósseo e cirurgia/trauma, separada da urgência.
