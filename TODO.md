@@ -66,7 +66,7 @@
   - Usar o símbolo da logo da clínica como ícone de página legível e servi-lo como favicon.
 
 - [x] **Segundo botão das heroes acompanha o conteúdo da página**
-  - Em `/`, `/implantes-proteses-cirurgias`, `/urgencia-odontologica`, `/cirurgias`, `/tratamentos` e `/duvidas`, mostrar “Conheça nossos tratamentos” e apontar para a seção de tratamentos da própria página.
+  - Em `/`, `/implantes-proteses`, `/urgencia-odontologica`, `/cirurgias`, `/tratamentos` e `/duvidas`, mostrar “Conheça nossos tratamentos” e apontar para a seção de tratamentos da própria página.
   - Em `/clinica-geral`, “Conheça nossos tratamentos” abre `/tratamentos`. Somente em `/profissionais`, manter “Conheça nossa equipe” e apontar para `#equipe`.
   - Manter “Agendar avaliação” como primeiro botão e abrir o WhatsApp.
 - [x] **Hero inicial da Home inspirada na referência de implantes**
@@ -78,7 +78,7 @@
   - Preservar a imagem, os textos, os links e o conteúdo próprios de cada página.
   - Referência: https://www.pontesaojoaoimplantes.com.br/.
 - [x] **Padronizar as sete heroes restantes pela página Equipe**
-  - Em `/`, `/implantes-proteses-cirurgias`, `/cirurgias`, `/clinica-geral`, `/urgencia-odontologica`, `/tratamentos` e `/duvidas`, igualar o enquadramento da imagem e o posicionamento do CTA de WhatsApp à hero `/profissionais`, sem cortar partes importantes da imagem nem do botão em celular ou desktop.
+  - Em `/`, `/implantes-proteses`, `/cirurgias`, `/clinica-geral`, `/urgencia-odontologica`, `/tratamentos` e `/duvidas`, igualar o enquadramento da imagem e o posicionamento do CTA de WhatsApp à hero `/profissionais`, sem cortar partes importantes da imagem nem do botão em celular ou desktop.
   - Encurtar título, descrição ou nota somente quando necessário para caber com clareza na mesma composição, preservando o sentido factual de cada página. Não alterar a hero de Equipe.
 
 - [x] **Substituir imagens repetidas por fotos oficiais adequadas**

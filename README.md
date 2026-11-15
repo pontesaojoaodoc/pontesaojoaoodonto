@@ -5,7 +5,7 @@ Site único da clínica, reconstruído a partir das duas referências públicas 
 ## Rotas de anúncio e navegação
 
 - `/` — home completa e institucional
-- `/implantes-proteses-cirurgias` — landing para reabilitação oral, implantes, próteses e cirurgias
+- `/implantes-proteses` — landing para reabilitação oral, implantes, próteses e cirurgias
 - `/clinica-geral` — landing para avaliação e prevenção
 - `/urgencia-odontologica` — landing para intercorrências e urgência
 - `/cirurgias` — landing própria para cirurgia bucomaxilofacial, implantodontia, enxerto ósseo e cirurgia/trauma
