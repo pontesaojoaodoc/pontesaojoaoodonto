@@ -1,7 +1,6 @@
 (function () {
   var ENDPOINT = 'https://script.google.com/macros/s/AKfycbzmJSy4a75OnqOShXtzg0yQQlpcRxiC1NWOtBgfQe9cPpCc5sDMiXEO9xhHrpZFWGtPnQ/exec';
   var TOKEN = '';
-  var ALFABETO = 'ABCDEFGHJKMNPQRSTUVWXYZ23456789';
 
   try {
     if (/[?&](gclid|gbraid|wbraid|utm_source)=/.test(location.search)) {
@@ -18,26 +17,17 @@
     return /[?&](gclid|gbraid|wbraid)=|[?&]utm_source=google/i.test(p) ? 'google' : 'organico';
   }
 
-  function gerarCodigo() {
-    var s = '';
-    for (var i = 0; i < 4; i++) {
-      s += ALFABETO.charAt(Math.floor(Math.random() * ALFABETO.length));
-    }
-    return s;
-  }
-
   function ehWhatsapp(h) {
     return /^https?:\/\/(wa\.me|api\.whatsapp\.com|web\.whatsapp\.com)/i.test(h || '');
   }
 
-  function enviar(ref) {
+  function enviar() {
     var p = paginaOrigem();
     var payload = JSON.stringify({
       token: TOKEN,
       nome: 'Lead WhatsApp',
       pagina: p,
-      origem: origemDe(p),
-      ref: ref
+      origem: origemDe(p)
     });
     try {
       if (navigator.sendBeacon) {
@@ -59,8 +49,6 @@
     if (!ehWhatsapp(original)) return;
     a.setAttribute('data-wa-original', original);
 
-    var ref = gerarCodigo();
-
-    enviar(ref);
+    enviar();
   }, true);
 })();
