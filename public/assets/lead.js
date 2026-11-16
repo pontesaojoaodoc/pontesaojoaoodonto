@@ -61,13 +61,6 @@
 
     var ref = gerarCodigo();
 
-    try {
-      var u = new URL(original, location.href);
-      var texto = u.searchParams.get('text') || '';
-      u.searchParams.set('text', (texto + ' (Ref: ' + ref + ')').trim());
-      a.setAttribute('href', u.toString().replace(/\+/g, '%20'));
-    } catch (e) {}
-
     enviar(ref);
   }, true);
 })();
