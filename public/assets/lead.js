@@ -1,6 +1,6 @@
 (function () {
-  var ENDPOINT = 'COLE_AQUI_A_URL_DO_APPS_SCRIPT/exec';
-  var TOKEN = ''; // o mesmo valor do Apps Script, se você definir um
+  var ENDPOINT = 'https://script.google.com/macros/s/AKfycbzmJSy4a75OnqOShXtzg0yQQlpcRxiC1NWOtBgfQe9cPpCc5sDMiXEO9xhHrpZFWGtPnQ/exec';
+  var TOKEN = '';
   var ALFABETO = 'ABCDEFGHJKMNPQRSTUVWXYZ23456789';
 
   try {
