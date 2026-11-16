@@ -21,11 +21,15 @@
     return /^https?:\/\/(wa\.me|api\.whatsapp\.com|web\.whatsapp\.com)/i.test(h || '');
   }
 
-  function enviar() {
+  function ehTelefone(h) {
+    return /^tel:/i.test(h || '');
+  }
+
+  function enviar(nome) {
     var p = paginaOrigem();
     var payload = JSON.stringify({
       token: TOKEN,
-      nome: 'Lead WhatsApp',
+      nome: nome,
       pagina: p,
       origem: origemDe(p)
     });
@@ -46,9 +50,11 @@
     if (!a) return;
 
     var original = a.getAttribute('data-wa-original') || a.getAttribute('href');
-    if (!ehWhatsapp(original)) return;
-    a.setAttribute('data-wa-original', original);
-
-    enviar();
+    if (ehWhatsapp(original)) {
+      a.setAttribute('data-wa-original', original);
+      enviar('Lead WhatsApp');
+    } else if (ehTelefone(original)) {
+      enviar('Lead telefone');
+    }
   }, true);
 })();
