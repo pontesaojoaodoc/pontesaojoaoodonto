@@ -172,3 +172,13 @@
 @media(max-width:820px){.home-intro{padding-top:26px}}
 
 @media(max-width:820px) and (max-height:820px){.home-intro{padding-top:0;margin-top:-12px}}
+
+/* Faixa superior informativa: quebra o texto sem deslocar o cabeçalho ou cortar conteúdo. */
+.announcement{min-height:36px;align-items:center;flex-wrap:wrap;justify-content:center;text-align:center;line-height:1.35;overflow-wrap:anywhere}
+.announcement span{min-width:0}
+.announcement a{display:inline-block;flex:0 0 auto;white-space:nowrap}
+@media(max-width:600px){
+  .announcement{padding:8px 16px;gap:4px 9px;font-size:9px;letter-spacing:.07em}
+  .announcement span{width:100%}
+  .announcement a{font-size:10px}
+}
